@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Autotests" annotations="JDK" configfailurepolicy="continue" alwaysRun="true">
+    <test name="Test1">
+        <classes>
+            <class name="com.simbirsoft.tests.CreateDirectoryTest"/>
+            <class name="com.simbirsoft.tests.GetDirectoryInfoTest"/>
+        </classes>
+    </test>
+</suite>

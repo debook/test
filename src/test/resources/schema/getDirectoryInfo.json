@@ -1,0 +1,83 @@
+{
+  "type": "object",
+  "properties": {
+    "_embedded": {
+      "type": "object",
+      "properties": {
+        "sort": {
+          "type": "string",
+          "enum": ["name", "path", "created", "modified", "size", "-name", "-path", "-created", "-modified", "-size", ""]
+        },
+        "items": {
+          "type": "array"
+        },
+        "limit": {
+          "type": "integer"
+        },
+        "offset": {
+          "type": "integer"
+        },
+        "path": {
+          "type": "string",
+          "format": "uri"
+        },
+        "total": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "sort",
+        "items",
+        "limit",
+        "offset",
+        "path",
+        "total"
+      ],
+      "additionalProperties": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "resource_id": {
+      "type": "string"
+    },
+    "modified": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "path":{
+      "type": "string",
+      "format": "uri"
+    },
+    "type": {
+      "type": "string",
+      "format": "uri"
+    },
+    "revision": {
+      "type": "number"
+    },
+    "comment_ids": {
+      "type": "object"
+    },
+    "exif": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "_embedded",
+    "name",
+    "created",
+    "resource_id",
+    "modified",
+    "path",
+    "type",
+    "revision",
+    "exif",
+    "comment_ids"
+  ],
+  "additionalProperties": false
+}
